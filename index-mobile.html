@@ -9,6 +9,7 @@
   <meta property="og:description" content="AQbar는 AI 협업 기반의 직무역량 평가 솔루션입니다.">
   <link rel="stylesheet" as="style" crossorigin="anonymous" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
   <link rel="stylesheet" href="mobile.css">
+  <script src="device-redirect.js"></script>
 </head>
 <body>
 
@@ -505,12 +506,130 @@
           </div>
         </div>
 
-        <div class="m-card" style="margin-top:20px;">
+        <div class="m-report-card">
+          <div class="m-radar-wrap" aria-hidden="true">
+            <svg viewBox="0 0 250 250" role="img" aria-label="7개 핵심 지표 레이더 차트">
+              <polygon points="125,103.75 141.61,111.75 145.72,129.73 134.22,144.14 115.78,144.14 104.28,129.73 108.39,111.75" fill="none" stroke="#e6e6de" stroke-width="1"/>
+              <polygon points="125,82.5 158.23,98.5 166.44,134.46 143.44,163.29 106.56,163.29 83.56,134.46 91.77,98.5" fill="none" stroke="#e6e6de" stroke-width="1"/>
+              <polygon points="125,61.25 174.84,85.25 187.15,139.18 152.66,182.43 97.34,182.43 62.85,139.18 75.16,85.25" fill="none" stroke="#e6e6de" stroke-width="1"/>
+              <polygon points="125,40 191.45,72 207.87,143.91 161.88,201.58 88.12,201.58 42.13,143.91 58.55,72" fill="none" stroke="#cfcfc4" stroke-width="1"/>
+              <line x1="125" y1="125" x2="125" y2="40" stroke="#e6e6de" stroke-width="1"/>
+              <line x1="125" y1="125" x2="191.45" y2="72" stroke="#e6e6de" stroke-width="1"/>
+              <line x1="125" y1="125" x2="207.87" y2="143.91" stroke="#e6e6de" stroke-width="1"/>
+              <line x1="125" y1="125" x2="161.88" y2="201.58" stroke="#e6e6de" stroke-width="1"/>
+              <line x1="125" y1="125" x2="88.12" y2="201.58" stroke="#e6e6de" stroke-width="1"/>
+              <line x1="125" y1="125" x2="42.13" y2="143.91" stroke="#e6e6de" stroke-width="1"/>
+              <line x1="125" y1="125" x2="58.55" y2="72" stroke="#e6e6de" stroke-width="1"/>
+              <polygon points="125,48.5 168.2,90.55 187.15,139.18 150.82,178.6 95.49,186.26 62.85,139.18 91.77,98.5" fill="rgba(91,76,196,0.18)" stroke="#4b3fd6" stroke-width="2" stroke-linejoin="round"/>
+              <circle cx="125" cy="48.5" r="3" fill="#4b3fd6"/>
+              <circle cx="168.2" cy="90.55" r="3" fill="#4b3fd6"/>
+              <circle cx="187.15" cy="139.18" r="3" fill="#4b3fd6"/>
+              <circle cx="150.82" cy="178.6" r="3" fill="#4b3fd6"/>
+              <circle cx="95.49" cy="186.26" r="3" fill="#4b3fd6"/>
+              <circle cx="62.85" cy="139.18" r="3" fill="#4b3fd6"/>
+              <circle cx="91.77" cy="98.5" r="3" fill="#4b3fd6"/>
+              <text x="125" y="22" text-anchor="middle" font-size="10" font-weight="700" fill="#18202e">전제 인식·재정의</text>
+              <text x="185" y="62" text-anchor="start" font-size="10" font-weight="700" fill="#18202e">문제 구조화</text>
+              <text x="220" y="148" text-anchor="start" font-size="10" font-weight="700" fill="#18202e">의사결정</text>
+              <text x="170" y="220" text-anchor="start" font-size="10" font-weight="700" fill="#18202e">자기검증</text>
+              <text x="80" y="220" text-anchor="end" font-size="10" font-weight="700" fill="#18202e">논증 구조화</text>
+              <text x="35" y="148" text-anchor="end" font-size="10" font-weight="700" fill="#18202e">실행 가능성</text>
+              <text x="55" y="62" text-anchor="end" font-size="10" font-weight="700" fill="#18202e">통합적 추론</text>
+            </svg>
+          </div>
+
+          <div class="m-score-list">
+            <div class="m-score-row">
+              <span class="m-score-row__label">전제 인식·재정의</span>
+              <div class="m-score-row__meta">
+                <span class="m-score-row__num m-score-row__num--accent">90</span>
+                <span class="m-score-row__badge m-score-row__badge--accent">매우 우수</span>
+              </div>
+              <div class="m-score-row__bar m-score-row__bar--accent"><span style="width:90%"></span></div>
+            </div>
+            <div class="m-score-row">
+              <span class="m-score-row__label">문제 구조화</span>
+              <div class="m-score-row__meta">
+                <span class="m-score-row__num m-score-row__num--green">65</span>
+                <span class="m-score-row__badge m-score-row__badge--green">양호</span>
+              </div>
+              <div class="m-score-row__bar m-score-row__bar--green"><span style="width:65%"></span></div>
+            </div>
+            <div class="m-score-row">
+              <span class="m-score-row__label">의사결정</span>
+              <div class="m-score-row__meta">
+                <span class="m-score-row__num m-score-row__num--green">75</span>
+                <span class="m-score-row__badge m-score-row__badge--green">양호</span>
+              </div>
+              <div class="m-score-row__bar m-score-row__bar--green"><span style="width:75%"></span></div>
+            </div>
+            <div class="m-score-row">
+              <span class="m-score-row__label">자기검증</span>
+              <div class="m-score-row__meta">
+                <span class="m-score-row__num m-score-row__num--green">70</span>
+                <span class="m-score-row__badge m-score-row__badge--green">양호</span>
+              </div>
+              <div class="m-score-row__bar m-score-row__bar--green"><span style="width:70%"></span></div>
+            </div>
+            <div class="m-score-row">
+              <span class="m-score-row__label">논증 구조화</span>
+              <div class="m-score-row__meta">
+                <span class="m-score-row__num m-score-row__num--accent">80</span>
+                <span class="m-score-row__badge m-score-row__badge--accent">우수</span>
+              </div>
+              <div class="m-score-row__bar m-score-row__bar--accent"><span style="width:80%"></span></div>
+            </div>
+            <div class="m-score-row">
+              <span class="m-score-row__label">실행 가능성</span>
+              <div class="m-score-row__meta">
+                <span class="m-score-row__num m-score-row__num--green">75</span>
+                <span class="m-score-row__badge m-score-row__badge--green">양호</span>
+              </div>
+              <div class="m-score-row__bar m-score-row__bar--green"><span style="width:75%"></span></div>
+            </div>
+            <div class="m-score-row">
+              <span class="m-score-row__label">통합적 추론</span>
+              <div class="m-score-row__meta">
+                <span class="m-score-row__num m-score-row__num--amber">50</span>
+                <span class="m-score-row__badge m-score-row__badge--amber">보통</span>
+              </div>
+              <div class="m-score-row__bar m-score-row__bar--amber"><span style="width:50%"></span></div>
+            </div>
+          </div>
+
+          <div class="m-insight-grid">
+            <div class="m-insight m-insight--strength">
+              <div class="m-insight__title">핵심 강점</div>
+              <ul>
+                <li>단계적 구체화 연속 8회 · 세션 말미 통합추론 달성</li>
+                <li>의도적 전환 주도 · 전제 재정의로 새 가설 도출</li>
+              </ul>
+            </div>
+            <div class="m-insight m-insight--risk">
+              <div class="m-insight__title">핵심 리스크</div>
+              <ul>
+                <li>[수정] 전 세션 미발현 · 반론 생성 0회</li>
+                <li>실행 제약 미명시 · 통합적 추론 후반 약화</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="m-card" style="margin-top:20px;padding:16px;">
           <p class="m-label" style="margin-bottom:12px;">면접 가이드 예시</p>
           <div class="m-guide-grid">
-            <div class="m-guide-item"><strong>문제 재정의 역량</strong>태스크 초반 AI에게 던진 첫 질문과 문제 범위 설정 방식을 검증하세요.</div>
-            <div class="m-guide-item"><strong>AI 활용 전략</strong>프롬프트 수정 패턴과 AI 출력물에 대한 비판적 검토 행동을 확인하세요.</div>
-            <div class="m-guide-item"><strong>실행 가능성</strong>최종 결과물의 현실적 제약 반영 여부와 우선순위 설정 근거를 질문하세요.</div>
+            <div class="m-guide-card">
+              <div class="m-guide-card__label">Q1 · 자기검증 면접 가이드</div>
+              <p>"T6에서 AI 결과물이 너무 모호하다고 지적하셨습니다. 자신이 제안한 K-컬쳐 IP 협업 아이디어가 틀릴 수 있는 상황은 어떤 경우일까요?"</p>
+            </div>
+            <div class="m-guide-card">
+              <div class="m-guide-card__label">Q2 · 통합적 추론 면접 가이드</div>
+              <p>"세션 후반부 통합추론 점수가 낮게 평가되었습니다. 도출한 결론을 다른 도메인 사례와 연결한다면 어떤 가설이 가능할까요?"</p>
+            </div>
+            <div class="m-guide-card">
+              <div class="m-guide-card__label">Q3 · 실행 가능성 면접 가이드</div>
+              <p>"제안한 솔루션의 실행 제약이 명시되지 않았습니다. 6개월 내 실현을 가정할 때, 가장 먼저 해소해야 할 자원·조직 리스크는 무엇인가요?"</p>
+            </div>
           </div>
         </div>
       </div>
@@ -741,7 +860,7 @@
           <input id="company" name="company" type="text" placeholder="(주)회사명" autocomplete="organization" required>
           <div class="m-form-actions">
             <button type="submit" class="m-btn m-btn--white">PoC 신청하기 →</button>
-            <button type="button" class="m-btn m-btn--ghost" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.35);" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">가격 문의하기</button>
+            <button type="button" class="m-btn m-btn--ghost" data-scroll-pricing style="background:transparent;color:#fff;border-color:rgba(255,255,255,.35);">가격 문의하기</button>
           </div>
         </form>
       </div>
@@ -757,7 +876,7 @@
       <div class="m-footer__links">
         <a href="mailto:info@aqbar.ai">info@aqbar.ai</a>
         <a href="https://aqbar.ai" target="_blank" rel="noopener noreferrer">https://aqbar.ai</a>
-        <a href="index.html">데스크탑 버전 보기</a>
+        <a href="index.html?view=desktop">데스크탑 버전 보기</a>
       </div>
       <p class="m-footer__copy">© 2026 AQbar. All rights reserved.</p>
     </div>

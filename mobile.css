@@ -1280,6 +1280,148 @@ a { color: inherit; }
   color: rgba(255,255,255,.4);
 }
 
+/* ── Radar chart & score bars (Feature 03) ── */
+.m-report-card {
+  margin-top: 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: #fff;
+}
+
+.m-radar-wrap {
+  padding: 20px 16px 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.m-radar-wrap svg {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  overflow: visible;
+}
+
+.m-score-list {
+  padding: 8px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.m-score-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  gap: 4px 10px;
+  align-items: center;
+}
+
+.m-score-row__label {
+  grid-column: 1;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.m-score-row__bar {
+  grid-column: 1 / -1;
+  height: 6px;
+  border-radius: 3px;
+  background: #ecebe3;
+  overflow: hidden;
+}
+
+.m-score-row__bar span {
+  display: block;
+  height: 100%;
+  border-radius: 3px;
+}
+
+.m-score-row__meta {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.m-score-row__num {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.m-score-row__badge {
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 3px;
+  padding: 2px 7px;
+  white-space: nowrap;
+}
+
+.m-score-row__bar--accent span { background: var(--accent); }
+.m-score-row__num--accent { color: var(--accent); }
+.m-score-row__badge--accent { color: var(--accent); background: var(--accent-soft); }
+
+.m-score-row__bar--green span { background: #16a34a; }
+.m-score-row__num--green { color: #16a34a; }
+.m-score-row__badge--green { color: #166534; background: #dcfce7; }
+
+.m-score-row__bar--amber span { background: #f59e0b; }
+.m-score-row__num--amber { color: #b45309; }
+.m-score-row__badge--amber { color: #92400e; background: #fef3c7; }
+
+.m-insight-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 20px;
+  border-top: 1px solid var(--border);
+}
+
+.m-insight {
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.m-insight--strength { background: #eef6f1; }
+.m-insight--risk { background: #fbeeee; }
+
+.m-insight__title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+
+.m-insight--strength .m-insight__title { color: #0f7a5f; }
+.m-insight--risk .m-insight__title { color: #b1483f; }
+
+.m-insight ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.m-guide-card {
+  background: var(--primary);
+  border-radius: 8px;
+  padding: 14px 16px;
+  color: #fff;
+}
+
+.m-guide-card__label {
+  font-size: 12px;
+  letter-spacing: .08em;
+  color: #9fc0e8;
+}
+
+.m-guide-card p {
+  margin: 8px 0 0;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
 /* ── Badge pills (Feature 03) ── */
 .m-pill {
   display: flex;

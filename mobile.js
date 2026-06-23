@@ -67,4 +67,12 @@
       btn.style.background = '#1fae6b';
     });
   }
+
+  var pricingBtn = document.querySelector('[data-scroll-pricing]');
+  if (pricingBtn) {
+    pricingBtn.addEventListener('click', function () {
+      var el = document.getElementById('pricing');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    });
+  }
 })();
