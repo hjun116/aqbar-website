@@ -431,6 +431,10 @@ a { color: inherit; }
 }
 
 /* ── Testimonials carousel ── */
+#testimonials .m-wrap {
+  margin-bottom: 32px;
+}
+
 .m-carousel {
   display: flex;
   gap: 12px;
