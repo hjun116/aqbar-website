@@ -425,7 +425,7 @@ a { color: inherit; }
 
 .m-callout p:last-child {
   margin-bottom: 0;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 700;
   line-height: 1.55;
 }
