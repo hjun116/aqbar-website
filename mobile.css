@@ -546,30 +546,60 @@ a { color: inherit; }
   padding: 24px;
 }
 
-/* ── Timeline (7 Steps — single row per step) ── */
+/* ── Timeline (7 Steps — vertical flow) ── */
+.m-timeline-block {
+  margin-top: 16px;
+  padding: 20px 16px 24px;
+  background: #f0eeea;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.m-timeline-block__label {
+  margin: 0 0 18px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: center;
+}
+
 .m-timeline {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0;
-  margin-top: 24px;
+  position: relative;
   width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.m-timeline::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 12px;
+  bottom: 12px;
+  width: 2px;
+  background: #ccc9be;
+  border-radius: 1px;
 }
 
 .m-timeline__item {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  gap: 8px;
-  width: 92%;
-  max-width: 340px;
-  padding: 11px 0;
-  text-align: left;
+  gap: 12px;
+  padding: 9px 0;
+  position: relative;
 }
 
-.m-timeline__item:not(:last-child) {
-  border-bottom: 1px solid var(--border);
+.m-timeline__rail {
+  flex: none;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .m-timeline__dot {
@@ -579,11 +609,19 @@ a { color: inherit; }
   border-radius: 50%;
   background: var(--primary);
   box-shadow: 0 0 0 3px rgba(19,52,94,.12);
-  margin: 0;
 }
 
 .m-timeline__dot--accent { background: var(--accent); box-shadow: 0 0 0 3px rgba(75,63,214,.12); }
 .m-timeline__dot--teal { background: var(--teal); box-shadow: 0 0 0 3px rgba(13,155,142,.12); }
+
+.m-timeline__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
 
 .m-timeline__step {
   flex: none;
@@ -602,7 +640,7 @@ a { color: inherit; }
   white-space: nowrap;
 }
 
-.m-timeline__item .m-tag {
+.m-timeline__content .m-tag {
   flex: none;
   margin-left: 2px;
 }
