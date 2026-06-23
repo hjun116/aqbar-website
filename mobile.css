@@ -137,6 +137,10 @@ a { color: inherit; }
   font-size: 14px;
 }
 
+.m-problem-lead {
+  font-size: 13px;
+}
+
 .m-sec--dark .m-lead { color: #aebfd6; }
 
 .m-accent { color: var(--accent); }
