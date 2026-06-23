@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>AQbar — AI 협업 기반 직무역량 평가 솔루션</title>
+  <meta name="description" content="AQbar는 AI 협업 기반의 직무역량 평가 솔루션입니다.">
+  <meta property="og:title" content="AQbar — AI 협업 기반 직무역량 평가 솔루션">
+  <meta property="og:description" content="AQbar는 AI 협업 기반의 직무역량 평가 솔루션입니다.">
+  <link rel="stylesheet" as="style" crossorigin="anonymous" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="m-nav">
+    <div class="m-nav__inner">
+      <a href="#top" class="m-logo">AQ<span>bar</span></a>
+      <button class="m-nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="nav-panel">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="m-nav-panel" id="nav-panel" aria-label="주요 메뉴">
+        <a href="#why">Why AQbar</a>
+        <a href="#solution">솔루션</a>
+        <a href="#features">핵심 기능</a>
+        <a href="#impact">도입 효과</a>
+        <a href="#faq">FAQ</a>
+        <div class="m-nav-panel__cta">
+          <a href="#contact" class="m-btn m-btn--white" style="width:100%;">PoC 신청하기</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== HERO ===== -->
+    <section class="m-sec" aria-labelledby="hero-title">
+      <div class="m-wrap m-text-center">
+        <div class="m-eyebrow">Beyond the Answer</div>
+        <h1 class="m-h1" id="hero-title">
+          AI가 모든 답을 주는 시대,<br>
+          당신의 지원자는 <span class="m-accent">어떤 질문</span>을<br>
+          던지고 있습니까?
+        </h1>
+        <p class="m-lead">
+          복잡한 변수 속에서 문제를 정의하고, 최적의 경로를 판단해 스스로 해결책을 찾아가는 힘, 기획력.
+          AQbar는 직감에 의존하던 지원자의 사고 과정을 입체적인 지표와 객관적 수치로 보여줍니다.
+        </p>
+        <div class="m-btn-row">
+          <a href="#contact" class="m-btn m-btn--primary">PoC 신청하기 →</a>
+          <a href="#solution" class="m-btn m-btn--ghost">평가 엔진 보기</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROBLEM ===== -->
+    <section class="m-sec m-sec--alt" aria-labelledby="problem-title">
+      <div class="m-wrap">
+        <p class="m-label">01 — 시장의 문제</p>
+        <h2 class="m-h2" id="problem-title">이런 경험,<br>있으신가요?</h2>
+        <p class="m-lead">AI 서류가 일상이 된 지금, 많은 채용 담당자들이 같은 상황을 반복해서 겪고 있습니다.</p>
+
+        <div class="m-card m-card--quote" style="margin-top:24px;">
+          <p style="margin:0 0 12px;font-size:12px;font-weight:600;letter-spacing:.1em;color:#8aabcf;text-transform:uppercase;">현장의 공통된 목소리</p>
+          <p style="margin:0;font-size:17px;font-weight:600;line-height:1.65;">“서류와 면접만으로는, 진짜 실력을 충분히 알 수 없습니다.”</p>
+          <div style="margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;gap:5px;">
+            <span style="font-size:11px;font-weight:600;color:rgba(255,255,255,.5);background:rgba(255,255,255,.08);border-radius:4px;padding:3px 8px;">게임</span>
+            <span style="font-size:11px;font-weight:600;color:rgba(255,255,255,.5);background:rgba(255,255,255,.08);border-radius:4px;padding:3px 8px;">교육</span>
+            <span style="font-size:11px;font-weight:600;color:rgba(255,255,255,.5);background:rgba(255,255,255,.08);border-radius:4px;padding:3px 8px;">IT</span>
+            <span style="font-size:11px;font-weight:600;color:rgba(255,255,255,.5);background:rgba(255,255,255,.08);border-radius:4px;padding:3px 8px;">이커머스</span>
+            <span style="font-size:11px;font-weight:600;color:rgba(255,255,255,.5);background:rgba(255,255,255,.08);border-radius:4px;padding:3px 8px;">제조</span>
+          </div>
+        </div>
+
+        <div class="m-stack" style="margin-top:20px;">
+          <div class="m-problem-card">
+            <div class="m-problem-card__icon"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><polyline points="1,4 3.5,6.5 9,1" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div>
+              <p class="m-problem-card__title">자기소개서가 훌륭해서 합격시켰는데,</p>
+              <p class="m-problem-card__desc">온보딩 후 기대했던 모습과 너무 달라 당황했던 경험</p>
+            </div>
+          </div>
+          <div class="m-problem-card">
+            <div class="m-problem-card__icon"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><polyline points="1,4 3.5,6.5 9,1" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div>
+              <p class="m-problem-card__title">서류 수십 건을 검토했는데,</p>
+              <p class="m-problem-card__desc">면접에서 번번이 실망해 공고를 다시 올린 경험</p>
+            </div>
+          </div>
+          <div class="m-problem-card">
+            <div class="m-problem-card__icon"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><polyline points="1,4 3.5,6.5 9,1" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div>
+              <p class="m-problem-card__title">면접에서는 다 잘 대답했는데,</p>
+              <p class="m-problem-card__desc">막상 입사 후 실무 능력이 턱없이 부족했던 경험</p>
+            </div>
+          </div>
+          <div class="m-problem-card">
+            <div class="m-problem-card__icon"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><polyline points="1,4 3.5,6.5 9,1" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div>
+              <p class="m-problem-card__title">AI로 쓴 것 같은데 확인할 방법이 없어서,</p>
+              <p class="m-problem-card__desc">반신반의하며 불필요한 면접만 계속 늘어난 경험</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="m-callout">
+          <p>이 모든 고민의 출발점은 하나입니다.</p>
+          <p>서류와 면접만으로는 화려한 <span class="m-accent">'결과물'</span> 뒤에 숨겨진<br>진짜 <span class="m-accent">'사고 과정'</span>을 들여다볼 수 없었기 때문입니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="m-sec" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="m-wrap">
+        <p class="m-label">솔루션 검토 후기</p>
+        <h2 class="m-h2" id="testimonials-title">실제 채용 현장의<br>목소리를 들었습니다</h2>
+      </div>
+      <div class="m-carousel" role="region" aria-label="고객 후기">
+        <article class="m-testimonial">
+          <span class="m-testimonial__tag">AI 작성 판별</span>
+          <p>자소서만 보면 다들 비슷하게 완벽해서 AI로 쓴 티가 나도 떨어뜨릴 근거가 마땅치 않았어요. <mark>지원자가 문제를 푸는 과정을 직접 볼 수 있다면, '진짜 실력'을 근거로 판단할 수 있겠다</mark>는 기대가 생깁니다.</p>
+          <div class="m-testimonial__meta">
+            <div class="m-testimonial__name">리크루팅 리드</div>
+            <div class="m-testimonial__org">국내 모바일 게임사</div>
+          </div>
+        </article>
+        <article class="m-testimonial">
+          <span class="m-testimonial__tag">조기 퇴사 관리</span>
+          <p>서류가 완벽해서 뽑았는데 막상 와서는 "제 일이 아닌 것 같다"며 나간 경우가 종종 있었어요. <mark>과정 데이터로 직무 적합성을 미리 가늠할 수 있다면, 조기 이탈을 줄이는 데 도움이 될 것</mark> 같습니다.</p>
+          <div class="m-testimonial__meta">
+            <div class="m-testimonial__name">HR 매니저</div>
+            <div class="m-testimonial__org">에듀테크 스타트업</div>
+          </div>
+        </article>
+        <article class="m-testimonial">
+          <span class="m-testimonial__tag">선별 효율</span>
+          <p>서류 수백 통을 보고도 면접에서 매번 기대에 못 미쳐 공고를 다시 올리곤 했습니다. <mark>사전에 역량이 점수로 정리된다면, 면접 전환율을 끌어올리는 데 의미가 있을 것</mark>으로 봅니다.</p>
+          <div class="m-testimonial__meta">
+            <div class="m-testimonial__name">CHRO</div>
+            <div class="m-testimonial__org">B2B SaaS 기업</div>
+          </div>
+        </article>
+        <article class="m-testimonial">
+          <span class="m-testimonial__tag">실무 역량 검증</span>
+          <p>면접에선 다들 청산유수인데 실무에선 혼자 한 발도 못 떼는 경우가 있었어요. <mark>말솜씨와 실무 역량의 갭을 미리 확인할 수 있을 것 같아 기대됩니다</mark>.</p>
+          <div class="m-testimonial__meta">
+            <div class="m-testimonial__name">리크루터</div>
+            <div class="m-testimonial__org">이커머스 플랫폼</div>
+          </div>
+        </article>
+        <article class="m-testimonial">
+          <span class="m-testimonial__tag">평가 편차 관리</span>
+          <p>대규모 채용이라 면접관마다 점수가 제각각인 게 늘 고민이었어요. <mark>합격 합의에 드는 시간을 줄일 수 있지 않을까</mark> 기대하고 있습니다.</p>
+          <div class="m-testimonial__meta">
+            <div class="m-testimonial__name">인사팀장</div>
+            <div class="m-testimonial__org">제조 대기업</div>
+          </div>
+        </article>
+        <article class="m-testimonial">
+          <span class="m-testimonial__tag">실무 역량 검증</span>
+          <p>포트폴리오는 화려한데 협업만 들어가면 무너지는 분들이 있었어요. <mark>어디서 막히는 사람인지 채용 전에 파악할 수 있을 것</mark> 같습니다.</p>
+          <div class="m-testimonial__meta">
+            <div class="m-testimonial__name">HR BP</div>
+            <div class="m-testimonial__org">핀테크 기업</div>
+          </div>
+        </article>
+      </div>
+      <p class="m-carousel-hint">← 좌우로 밀어서 더 보기</p>
+    </section>
+
+    <!-- ===== WHY AQBAR ===== -->
+    <section class="m-sec m-sec--dark" id="why" aria-labelledby="why-title">
+      <div class="m-wrap m-text-center">
+        <p class="m-label">Why AQbar</p>
+        <h2 class="m-h2" id="why-title"><span class="m-accent">평가의 기준</span>을 바꿉니다</h2>
+        <p class="m-lead">정답이 아닌 활용 과정까지 평가해, 실제 업무에서 AI로 성과를 만드는 역량을 검증합니다.</p>
+      </div>
+      <div class="m-wrap m-compare" style="margin-top:32px;">
+        <div class="m-compare-card">
+          <span class="m-compare__badge m-compare__badge--muted">기존 평가 방식</span>
+          <h3 class="m-h3" style="color:#fff;margin-bottom:20px;">결과물만 봅니다</h3>
+          <ul class="m-cross-list">
+            <li>AI로 완성된 서류와 과제, 변별 불가능</li>
+            <li>결과 중심 평가로 실무 역량 검증 어려움</li>
+            <li>비개발 직군은 정량 평가 기준 자체가 부재</li>
+            <li>면접관마다 점수가 제각각, 편차 누적</li>
+          </ul>
+        </div>
+        <div class="m-card m-card--accent">
+          <span class="m-compare__badge m-compare__badge--white">AQbar</span>
+          <h3 class="m-h3" style="color:#fff;margin-bottom:20px;">문제 해결의 '과정'을 봅니다</h3>
+          <ul class="m-check-list">
+            <li>AI 협업 대화 로그를 턴 단위로 해체 분석</li>
+            <li>7개 핵심 지표 × 4차원 정량 스코어링</li>
+            <li>비개발 직군(기획·마케팅·사업개발) 실무 검증</li>
+            <li>동일 루브릭 기반 일관된 역량 근거 제공</li>
+            <li>지원자별 맞춤 면접 검증 가이드까지 자동 산출</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOLUTION ===== -->
+    <section class="m-sec" id="solution" aria-labelledby="solution-title">
+      <div class="m-wrap">
+        <p class="m-label">02 — AQbar가 정의하는 AI 시대의 핵심 역량</p>
+        <h2 class="m-h2" id="solution-title">AI가 실행하는 시대,<br>사람의 경쟁력은 <span class="m-accent">기획력</span>입니다.</h2>
+
+        <div class="m-hero-card">
+          <p class="m-hero-card__title">기획력</p>
+          <p class="m-hero-card__sub">Strategic Problem Solving</p>
+          <p class="m-hero-card__desc">현재 상태(As-Is)를 이해하고 원하는 미래의 목표 상태(To-Be)를 설정한 후, 그 상태에 도달하기 위한 <strong>최적의 행동 경로를 설계하는 사고와 실행의 과정</strong></p>
+        </div>
+
+        <div class="m-as-is" style="margin-top:24px;">
+          <div class="m-as-is__label">AS-IS</div>
+          <div class="m-as-is__title">현재 상태</div>
+        </div>
+        <div class="m-arrow-down">↓</div>
+
+        <div class="m-path-grid">
+          <div class="m-path-card">
+            <div class="m-path-card__label m-path-card__label--why">WHY</div>
+            <p class="m-path-card__sub">목적 · 문제 정의</p>
+            <p class="m-path-card__desc">왜 이것을 해야 하는가?<br>문제의 본질은 무엇인가?</p>
+          </div>
+          <div class="m-path-card">
+            <div class="m-path-card__label m-path-card__label--what">WHAT</div>
+            <p class="m-path-card__sub">목표 · 범위 설정</p>
+            <p class="m-path-card__desc">무엇을 만들 것인가?<br>성공의 기준은 무엇인가?</p>
+          </div>
+          <div class="m-path-card">
+            <div class="m-path-card__label m-path-card__label--how">HOW</div>
+            <p class="m-path-card__sub">전략 · 실행 설계</p>
+            <p class="m-path-card__desc">어떻게 실행할 것인가?<br>자원과 우선순위를 어떻게 설정하는가?</p>
+          </div>
+        </div>
+
+        <div class="m-arrow-down">↓</div>
+        <div class="m-as-is">
+          <div class="m-as-is__label" style="color:var(--teal);">TO-BE</div>
+          <div class="m-as-is__title" style="color:var(--teal);">목표 상태</div>
+        </div>
+
+        <p class="m-label" style="margin-top:32px;">사고 프로세스 · 7 Steps</p>
+        <div class="m-timeline">
+          <div class="m-timeline__item">
+            <div class="m-timeline__dot"></div>
+            <div class="m-timeline__step">01</div>
+            <p class="m-timeline__title">문제 정의</p>
+            <span class="m-tag m-tag--why">WHY</span>
+          </div>
+          <div class="m-timeline__item">
+            <div class="m-timeline__dot"></div>
+            <div class="m-timeline__step">02</div>
+            <p class="m-timeline__title">목표 설정</p>
+            <span class="m-tag m-tag--why">WHY</span>
+          </div>
+          <div class="m-timeline__item">
+            <div class="m-timeline__dot m-timeline__dot--accent"></div>
+            <div class="m-timeline__step">03</div>
+            <p class="m-timeline__title">현황 분석</p>
+            <span class="m-tag m-tag--what">WHAT</span>
+          </div>
+          <div class="m-timeline__item">
+            <div class="m-timeline__dot m-timeline__dot--accent"></div>
+            <div class="m-timeline__step">04</div>
+            <p class="m-timeline__title">전략 수립</p>
+            <span class="m-tag m-tag--what">WHAT</span>
+          </div>
+          <div class="m-timeline__item">
+            <div class="m-timeline__dot m-timeline__dot--teal"></div>
+            <div class="m-timeline__step">05</div>
+            <p class="m-timeline__title">실행 계획</p>
+            <span class="m-tag m-tag--how">HOW</span>
+          </div>
+          <div class="m-timeline__item">
+            <div class="m-timeline__dot m-timeline__dot--teal"></div>
+            <div class="m-timeline__step">06</div>
+            <p class="m-timeline__title">의사 결정</p>
+            <span class="m-tag m-tag--how">HOW</span>
+          </div>
+          <div class="m-timeline__item">
+            <div class="m-timeline__dot m-timeline__dot--teal"></div>
+            <div class="m-timeline__step">07</div>
+            <p class="m-timeline__title">검토 &amp; 수정</p>
+            <span class="m-tag m-tag--how">HOW</span>
+          </div>
+        </div>
+
+        <hr style="border:none;border-top:1px solid var(--border);margin:40px 0;">
+
+        <p class="m-label">03 — 솔루션 개요</p>
+        <h2 class="m-h2">채용부터 진단, 그리고 교육까지,<br>하나의 기준으로</h2>
+        <p class="m-lead">AQbar는 지원자가 AI와 협업하며 문제를 정의하고, 판단하고, 해결하는 전 과정을 분석해 기획 및 문제해결 역량을 정량적으로 측정합니다.</p>
+
+        <div class="m-stack m-stack--lg" style="margin-top:28px;">
+          <div class="m-card">
+            <span class="m-week__label">01</span>
+            <h3 class="m-week__title">평가 세션 입장</h3>
+            <p class="m-lead" style="margin-top:8px;font-size:14px;">개인정보를 입력하고 폐쇄형 샌드박스 평가 세션에 입장합니다.</p>
+          </div>
+          <div class="m-card">
+            <span class="m-week__label">02</span>
+            <h3 class="m-week__title">AI와 협업해 태스크 수행</h3>
+            <p class="m-lead" style="margin-top:8px;font-size:14px;">제한된 시간 내 AI를 자유롭게 활용해 직무 태스크를 수행합니다.</p>
+          </div>
+          <div class="m-card">
+            <span class="m-week__label">03</span>
+            <h3 class="m-week__title">결과물 작성 및 제출</h3>
+            <p class="m-lead" style="margin-top:8px;font-size:14px;">태스크 결과물을 제출하면, 24시간 내 평가 리포트가 산출됩니다.</p>
+          </div>
+        </div>
+
+        <div class="m-pipeline">
+          <p class="m-pipeline__label">5단계 평가 엔진 파이프라인</p>
+          <div class="m-pipeline__step">
+            <div class="m-pipeline__step-num">STEP 01</div>
+            <p class="m-pipeline__step-title">직무 맞춤형<br>과제 설계</p>
+            <p class="m-pipeline__step-desc">JD · 사업 및 경쟁사 현황 분석, 실무 시나리오 설계</p>
+          </div>
+          <div class="m-pipeline__arrow">↓</div>
+          <div class="m-pipeline__step">
+            <div class="m-pipeline__step-num">STEP 02</div>
+            <p class="m-pipeline__step-title">AI 협업 세션<br>로그 수집</p>
+            <p class="m-pipeline__step-desc">샌드박스 내 태스크 수행, 대화 로그 전문 저장</p>
+          </div>
+          <div class="m-pipeline__arrow">↓</div>
+          <div class="m-pipeline__step">
+            <div class="m-pipeline__step-num">STEP 03</div>
+            <p class="m-pipeline__step-title">3 레이어<br>턴 단위 분석</p>
+            <p class="m-pipeline__step-desc">의도 · 행동 기반 태깅, 3단계 레이어 해체 분석</p>
+          </div>
+          <div class="m-pipeline__arrow">↓</div>
+          <div class="m-pipeline__step">
+            <div class="m-pipeline__step-num">STEP 04</div>
+            <p class="m-pipeline__step-title">7개 지표<br>정량 스코어링</p>
+            <p class="m-pipeline__step-desc">존재 · 빈도 · 특성 · 깊이 4차원 측정 및 정량 평가</p>
+          </div>
+          <div class="m-pipeline__arrow">↓</div>
+          <div class="m-pipeline__step m-pipeline__step--final">
+            <div class="m-pipeline__step-num">STEP 05</div>
+            <p class="m-pipeline__step-title">리포트 &amp;<br>면접 가이드</p>
+            <p class="m-pipeline__step-desc">24h 내 역량 평가 리포트, 맞춤형 면접 검증 질문</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURES ===== -->
+    <section class="m-sec m-sec--alt" id="features" aria-labelledby="features-title">
+      <div class="m-wrap">
+        <p class="m-label">04 — 핵심 기능</p>
+        <h2 class="m-h2" id="features-title">지원자의 사고 과정을 정량화하고<br>면접 검증으로 이어갑니다.</h2>
+        <p class="m-lead">기업과 직무에 맞춰 설계된 실무 시나리오 태스크를 통해, 결과에서는 보이지 않던 지원자의 사고 역량을 평가합니다.</p>
+
+        <div class="m-segments" role="tablist" aria-label="핵심 기능">
+          <button class="m-segment" type="button" role="tab" aria-selected="true" data-target="feat-01">Feature 01</button>
+          <button class="m-segment" type="button" role="tab" aria-selected="false" data-target="feat-02">Feature 02</button>
+          <button class="m-segment" type="button" role="tab" aria-selected="false" data-target="feat-03">Feature 03</button>
+        </div>
+      </div>
+
+      <!-- Feature 01 -->
+      <div class="m-wrap m-feature-block" id="feat-01">
+        <div class="m-feature-divider"><span>Feature 01 · Task Design Engine</span></div>
+        <h3 class="m-h3 m-text-center">채용 포지션마다 새롭게 설계되는 맞춤형 태스크</h3>
+        <p class="m-lead m-text-center" style="font-size:15px;">정형화된 문제은행 방식에서 벗어나, 오직 우리 기업·직무만을 위한 최적화된 평가 시나리오를 매번 새로 설계합니다.</p>
+
+        <div class="m-stack" style="margin-top:24px;">
+          <div class="m-io-step">
+            <p class="m-io-step__label">INPUT</p>
+            <p class="m-io-step__title">고객사 JD, 근거 자료 기반 기업 현황 분석</p>
+            <ul class="m-io-list">
+              <li>온보딩 폼 &amp; JD</li>
+              <li>공시 · 뉴스 · 인터뷰</li>
+              <li>기업 개요 · 사업 모델 · 경쟁사 현황</li>
+              <li>조직 문화 · 직무 환경 정보</li>
+            </ul>
+          </div>
+          <div class="m-process-step">
+            <div class="m-process-step__head"><span class="m-process-step__num">1</span>난이도 및 변수 설계</div>
+            <div class="m-check-grid">
+              <span>정보량 설계</span><span>제약 조건 설계</span><span>문제의 명확성 설계</span><span>직무·직급별 난이도 최적화</span>
+            </div>
+          </div>
+          <div class="m-process-step">
+            <div class="m-process-step__head"><span class="m-process-step__num">2</span>실제 실무 상황 반영</div>
+            <div class="m-check-grid">
+              <span>실제 업무 프로세스 반영</span><span>현실적인 의사결정 상황 구현</span><span>데이터 공백 및 불확실성 반영</span><span>AI 협업 환경 구성</span>
+            </div>
+          </div>
+          <div class="m-process-step">
+            <div class="m-process-step__head"><span class="m-process-step__num">3</span>품질 검증 및 고도화</div>
+            <div class="m-check-grid">
+              <span>7개 핵심 지표 검증</span><span>평가 신뢰도 검증</span><span>난이도 검증</span><span>실무 적용 가능성 검증</span>
+            </div>
+          </div>
+          <div class="m-io-step m-io-step--dark">
+            <p class="m-io-step__label">OUTPUT</p>
+            <p class="m-io-step__title">실무 시나리오 자동 생성 · AI 협업 기반 평가 설계</p>
+            <ul class="m-io-list">
+              <li>기업 문화와 가치 반영</li>
+              <li>바로 배포 가능한 평가 패키지 제공</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 02 -->
+      <div class="m-wrap m-feature-block" id="feat-02">
+        <div class="m-feature-divider"><span>Feature 02 · 7 Core Indicators</span></div>
+        <h3 class="m-h3 m-text-center">7개 핵심 평가 지표</h3>
+        <p class="m-lead m-text-center" style="font-size:15px;">AI와 상호작용하는 과정에서 드러나는 7개 지표로 문제해결 역량을 정량 측정합니다.</p>
+
+        <div class="m-card" style="margin-top:24px;padding:0 20px;">
+          <div class="m-indicator">
+            <span class="m-indicator__num">01</span>
+            <div class="m-indicator__body">
+              <p class="m-indicator__title">전제 인식 및 재정의</p>
+              <p class="m-indicator__desc">조건의 전제를 발견하고 정보 공백을 가정으로 대체해 문제의 틀을 재정의한다.</p>
+            </div>
+          </div>
+          <div class="m-indicator">
+            <span class="m-indicator__num">02</span>
+            <div class="m-indicator__body">
+              <p class="m-indicator__title">문제 구조화</p>
+              <p class="m-indicator__desc">복잡한 상황을 독립 요소로 분해하고 변수 간 관계를 인식한다.</p>
+            </div>
+          </div>
+          <div class="m-indicator">
+            <span class="m-indicator__num">03</span>
+            <div class="m-indicator__body">
+              <p class="m-indicator__title">의사결정</p>
+              <p class="m-indicator__desc">선택지를 비교하고 하나를 선택하며 그 선택의 비용을 인식한다.</p>
+            </div>
+          </div>
+          <div class="m-indicator">
+            <span class="m-indicator__num">04</span>
+            <div class="m-indicator__body">
+              <p class="m-indicator__title">자기검증</p>
+              <p class="m-indicator__desc">자기 논리의 허점을 발견하고 AI 결과물을 비판적으로 검토하며 판단을 수정한다.</p>
+            </div>
+          </div>
+          <div class="m-indicator">
+            <span class="m-indicator__num">05</span>
+            <div class="m-indicator__body">
+              <p class="m-indicator__title">논증 구조화</p>
+              <p class="m-indicator__desc">주장에 근거를 연결하고 외부 반론을 능동적으로 생성·처리한다.</p>
+            </div>
+          </div>
+          <div class="m-indicator">
+            <span class="m-indicator__num">06</span>
+            <div class="m-indicator__body">
+              <p class="m-indicator__title">실행 가능성</p>
+              <p class="m-indicator__desc">현실 제약을 고려하고 탐색에서 실행으로 전환하며 구체적 실행 조건을 설정한다.</p>
+            </div>
+          </div>
+          <div class="m-indicator">
+            <span class="m-indicator__num">07</span>
+            <div class="m-indicator__body">
+              <p class="m-indicator__title">통합적 추론</p>
+              <p class="m-indicator__desc">세션에 축적된 복수의 정보를 연결해 이전에 없던 새로운 판단을 도출한다.</p>
+            </div>
+          </div>
+          <div class="m-indicator m-indicator--soon">
+            <div class="m-indicator__body">
+              <p style="font-size:10px;font-weight:700;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin:0 0 8px;">Coming Soon</p>
+              <p class="m-indicator__title">Team Fit · Company Fit</p>
+              <p class="m-indicator__desc">조직 문화 적합성 지표 확장 예정</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 03 -->
+      <div class="m-wrap m-feature-block" id="feat-03">
+        <div class="m-feature-divider"><span>Feature 03 · Report &amp; Interview Guide</span></div>
+        <h3 class="m-h3 m-text-center">24시간 내, 정량 평가 리포트 &amp; 면접 가이드</h3>
+        <p class="m-lead m-text-center" style="font-size:15px;">수집된 사고 데이터를 7개 핵심 지표로 분석해 AQbar Score로 산출하고, 면접에서 검증할 주요 포인트까지 연결합니다.</p>
+
+        <div class="m-stack" style="margin-top:24px;">
+          <div class="m-pill">
+            <span class="m-pill__num">01</span>
+            <div>
+              <div class="m-pill__title">핵심 지표별 정량 평가</div>
+              <div class="m-pill__desc">지원자 간 역량을 객관적으로 비교</div>
+            </div>
+          </div>
+          <div class="m-pill">
+            <span class="m-pill__num">02</span>
+            <div>
+              <div class="m-pill__title">7지표 × 4차원 심층 분석</div>
+              <div class="m-pill__desc">존재 · 빈도 · 특성 · 깊이로 역량 입체화</div>
+            </div>
+          </div>
+          <div class="m-pill">
+            <span class="m-pill__num">03</span>
+            <div>
+              <div class="m-pill__title">맞춤형 면접 질문 가이드</div>
+              <div class="m-pill__desc">24시간 내 HR 전용 리포트 제공</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="m-card" style="margin-top:20px;">
+          <p class="m-label" style="margin-bottom:12px;">면접 가이드 예시</p>
+          <div class="m-guide-grid">
+            <div class="m-guide-item"><strong>문제 재정의 역량</strong>태스크 초반 AI에게 던진 첫 질문과 문제 범위 설정 방식을 검증하세요.</div>
+            <div class="m-guide-item"><strong>AI 활용 전략</strong>프롬프트 수정 패턴과 AI 출력물에 대한 비판적 검토 행동을 확인하세요.</div>
+            <div class="m-guide-item"><strong>실행 가능성</strong>최종 결과물의 현실적 제약 반영 여부와 우선순위 설정 근거를 질문하세요.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== IMPACT ===== -->
+    <section class="m-sec m-sec--dark" id="impact" aria-labelledby="impact-title">
+      <div class="m-wrap">
+        <p class="m-label">05 — 솔루션 도입 기대효과</p>
+        <h2 class="m-h2" id="impact-title">평가 방식을 바꾸면,<br>채용 의사결정이 달라집니다.</h2>
+        <p class="m-lead">AQbar는 단순한 평가 도구가 아닌, 조직의 인재 데이터 인프라입니다. 더 빠르게, 더 정확하게, 더 공정하게 선별합니다.</p>
+
+        <div class="m-stack m-stack--lg" style="margin-top:32px;">
+          <div class="m-stat">
+            <div class="m-stat__label">Data</div>
+            <h3 class="m-stat__title">채용 의사결정 객관성 향상</h3>
+            <ul>
+              <li>루브릭 기반 일관된 채점 근거</li>
+              <li>근거 기반 핵심 역량 파악</li>
+              <li>면접관 간 평가 편차 최소화</li>
+            </ul>
+          </div>
+          <div class="m-stat">
+            <div class="m-stat__label">Time</div>
+            <h3 class="m-stat__title">면접 운영 효율 극대화</h3>
+            <ul>
+              <li>직무 미적합 지원자 사전 스크리닝</li>
+              <li>후보자당 면접 준비 시간 40% 이상 단축</li>
+              <li>핵심 타깃 인재 대상의 면접 집중도 극대화</li>
+            </ul>
+          </div>
+          <div class="m-stat">
+            <div class="m-stat__label">Organization</div>
+            <h3 class="m-stat__title">조직 역량 자산화</h3>
+            <ul>
+              <li>사내 역량 벤치마크 구축</li>
+              <li>직무·직급·부서별 역량 패턴 분석</li>
+              <li>입사 후 성과 연동, 예측 타당도 향상</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ONBOARDING ===== -->
+    <section class="m-sec" aria-labelledby="onboard-title">
+      <div class="m-wrap">
+        <p class="m-label">06 — 솔루션 도입 프로세스</p>
+        <h2 class="m-h2" id="onboard-title">JD 수령 후 채용 프로세스 도입까지,<br>단, 3주</h2>
+        <p class="m-lead" style="font-size:14px;">※ 전담팀 밀착 지원</p>
+
+        <div class="m-stack" style="margin-top:28px;">
+          <div class="m-week">
+            <span class="m-week__label">Week 01</span>
+            <h3 class="m-week__title">평가 기준 및 태스크 설계</h3>
+            <ul>
+              <li>JD 및 기존 평가 체계 분석</li>
+              <li>기업, 사업 모델, 경쟁사 현황 분석</li>
+              <li>직무 기반 태스크 설계</li>
+            </ul>
+          </div>
+          <div class="m-week">
+            <span class="m-week__label">Week 02</span>
+            <h3 class="m-week__title">신뢰도 및 운영성 검증</h3>
+            <ul>
+              <li>내부 핵심 인재 대상 파일럿 진행</li>
+              <li>점수 기준 및 면접 연계 검증</li>
+              <li>피드백 기반 태스크 보완</li>
+            </ul>
+          </div>
+          <div class="m-week">
+            <span class="m-week__label">Week 03</span>
+            <h3 class="m-week__title">채용 프로세스 적용</h3>
+            <ul>
+              <li>운영 환경 최종 적용 및 배치</li>
+              <li>담당자 교육 및 운영 지원</li>
+              <li>실무 적용 모니터링</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRICING ===== -->
+    <section class="m-sec m-sec--alt" id="pricing" aria-labelledby="pricing-title">
+      <div class="m-wrap m-text-center">
+        <p class="m-label">07 — 가격 플랜</p>
+        <h2 class="m-h2" id="pricing-title">효율적인 채용을 위한 플랜 선택</h2>
+        <p class="m-lead">기업 규모와 채용 니즈에 최적화된 플랜을 제안합니다.</p>
+
+        <div class="m-stack m-stack--lg" style="margin-top:32px;text-align:left;">
+          <div class="m-pricing">
+            <p class="m-pricing__plan">Plan 01</p>
+            <h3 class="m-pricing__title">PAY-AS-YOU-GO 플랜</h3>
+            <p class="m-pricing__desc">유연한 결제를 원하는 기업에게 추천합니다.</p>
+            <ul>
+              <li>기본 단가 적용</li>
+              <li>평가 건당 후불 결제</li>
+            </ul>
+          </div>
+          <div class="m-pricing m-pricing--featured">
+            <span class="m-pricing__badge">MOST POPULAR</span>
+            <p class="m-pricing__plan">Plan 02</p>
+            <h3 class="m-pricing__title">사용량 기반 패키지 플랜</h3>
+            <p class="m-pricing__desc">패키지 할인을 원하는 기업에게 추천합니다.</p>
+            <ul>
+              <li>50건 ~ 300건 패키지 선택</li>
+              <li>볼륨에 따라 10 ~ 20% 단가 절감</li>
+            </ul>
+          </div>
+          <div class="m-pricing">
+            <p class="m-pricing__plan">Plan 03</p>
+            <h3 class="m-pricing__title">엔터프라이즈 플랜</h3>
+            <p class="m-pricing__desc">커스터마이징이 필요한 기업에게 추천합니다.</p>
+            <ul>
+              <li>300건 이상 대규모 채용 평가 지원</li>
+              <li>전담 기술 매니저 매칭</li>
+              <li>관리용 대시보드</li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="#contact" class="m-btn m-btn--primary" style="margin-top:28px;display:inline-flex;">상세 플랜 및 가격 문의하기 →</a>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="m-sec" id="faq" aria-labelledby="faq-title">
+      <div class="m-wrap m-text-center">
+        <p class="m-label">08 — FAQ</p>
+        <h2 class="m-h2" id="faq-title">자주 묻는 질문</h2>
+        <p class="m-lead">AQbar 도입을 검토하며 자주 문의해 주시는 질문들을 정리했습니다.</p>
+
+        <div class="m-faq-filters">
+          <button type="button" class="m-faq-filter" data-active="true" data-cat="all">전체</button>
+          <button type="button" class="m-faq-filter" data-active="false" data-cat="pricing">가격</button>
+          <button type="button" class="m-faq-filter" data-active="false" data-cat="diff">차별점</button>
+          <button type="button" class="m-faq-filter" data-active="false" data-cat="onboarding">도입</button>
+          <button type="button" class="m-faq-filter" data-active="false" data-cat="security">보안</button>
+          <button type="button" class="m-faq-filter" data-active="false" data-cat="candidate">지원자</button>
+        </div>
+
+        <div class="m-faq-list">
+          <div class="m-faq-item" data-faq-cat="pricing">
+            <details>
+              <summary>가격은 어떻게 책정되나요?<span class="m-faq-plus">+</span></summary>
+              <div class="m-faq-item__body">
+                연간 채용 규모에 따라 맞춤 견적을 제공합니다. <strong>PoC 신청 시 현재 채용 상황에 맞춘 견적을 무료로 받아보실 수 있습니다.</strong>
+                <a href="#contact" class="m-faq-item__link">PoC에서 맞춤 견적 받아보기 →</a>
+              </div>
+            </details>
+          </div>
+          <div class="m-faq-item" data-faq-cat="pricing">
+            <details>
+              <summary>무료로 먼저 체험해 볼 수 있나요?<span class="m-faq-plus">+</span></summary>
+              <div class="m-faq-item__body">
+                네, PoC를 통해 비용 부담 없이 먼저 효과를 확인하실 수 있습니다. <strong>PoC 신청 후 영업일 기준 24시간 이내</strong> 담당자가 연락드려 무료 파일럿 프로그램을 안내해드립니다.
+                <a href="#contact" class="m-faq-item__link">PoC 신청하기 →</a>
+              </div>
+            </details>
+          </div>
+          <div class="m-faq-item" data-faq-cat="diff">
+            <details>
+              <summary>기존 인성·적성검사와 무엇이 다른가요?<span class="m-faq-plus">+</span></summary>
+              <div class="m-faq-item__body">
+                기존 검사는 정해진 문항에 답하는 방식이라 <strong>AI 시대의 실제 직무 수행 능력을 측정하기 어렵습니다.</strong> AQbar는 지원자가 AI와 협업하며 직무 과제를 수행하는 '과정' 전체를 분석합니다.
+              </div>
+            </details>
+          </div>
+          <div class="m-faq-item" data-faq-cat="diff">
+            <details>
+              <summary>AI 툴을 모두 사용하면 변별력이 떨어지지 않나요?<span class="m-faq-plus">+</span></summary>
+              <div class="m-faq-item__body">
+                'AI를 어떻게 다루는가'에 따라 문제 해결의 깊이와 결과물의 수준은 극명하게 달라집니다. 프롬프트 설계, AI 답변의 비판적 검토 등 <strong>문제해결 과정 전체</strong>를 데이터화하여 분석합니다.
+              </div>
+            </details>
+          </div>
+          <div class="m-faq-item" data-faq-cat="onboarding">
+            <details>
+              <summary>도입까지 얼마나 걸리나요?<span class="m-faq-plus">+</span></summary>
+              <div class="m-faq-item__body">
+                PoC 신청부터 첫 평가 운영까지 <strong>평균 2~3주 내</strong>에 시작하실 수 있습니다.
+                <a href="#contact" class="m-faq-item__link">도입 일정 상담 신청하기 →</a>
+              </div>
+            </details>
+          </div>
+          <div class="m-faq-item" data-faq-cat="onboarding">
+            <details>
+              <summary>도입 후 기대 효과가 없으면 어떻게 되나요?<span class="m-faq-plus">+</span></summary>
+              <div class="m-faq-item__body">
+                PoC 기간 중 기대 효과가 검증되지 않으면 <strong>정식 계약 없이 종료</strong>하실 수 있습니다.
+              </div>
+            </details>
+          </div>
+          <div class="m-faq-item" data-faq-cat="security">
+            <details>
+              <summary>지원자 데이터는 어떻게 보관·관리되나요?<span class="m-faq-plus">+</span></summary>
+              <div class="m-faq-item__body">
+                지원자의 모든 데이터는 보안 인증을 갖춘 서버에 강력하게 암호화되어 보관됩니다. 데이터 보존 기간 만료 시 <strong>복구 불가능한 방식으로 영구 자동 파기</strong>됩니다.
+              </div>
+            </details>
+          </div>
+          <div class="m-faq-item" data-faq-cat="candidate">
+            <details>
+              <summary>지원자는 어떤 경험을 하게 되나요?<span class="m-faq-plus">+</span></summary>
+              <div class="m-faq-item__body">
+                실제 직무와 유사한 과제를 AI와 함께 해결합니다. 평균 평가 시간은 60분이며, 평가 결과 수치는 지원자에게 공개되지 않고 HR 담당자 전용 리포트로만 제공됩니다.
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="m-sec m-sec--primary" id="contact" aria-labelledby="contact-title">
+      <div class="m-wrap m-text-center">
+        <p class="m-label">PoC 신청</p>
+        <h2 class="m-h2" id="contact-title" style="color:#fff;">우리 조직과 직무에 맞는 평가 방식인지<br>직접 확인해 보세요.</h2>
+        <p class="m-lead" style="color:#bccde2;">정식 출시 전, PoC를 통해 채용 평가의 새로운 표준을 먼저 경험하실 수 있습니다.</p>
+
+        <form class="m-form" novalidate>
+          <label for="name">담당자 이름</label>
+          <input id="name" name="name" type="text" placeholder="홍길동" autocomplete="name" required>
+          <label for="email">회사 이메일</label>
+          <input id="email" name="email" type="email" placeholder="name@company.com" autocomplete="email" required>
+          <label for="company">회사명</label>
+          <input id="company" name="company" type="text" placeholder="(주)회사명" autocomplete="organization" required>
+          <div class="m-form-actions">
+            <button type="submit" class="m-btn m-btn--white">PoC 신청하기 →</button>
+            <button type="button" class="m-btn m-btn--ghost" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.35);" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">가격 문의하기</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="m-footer">
+    <div class="m-wrap">
+      <div class="m-footer__logo">AQ<span>bar</span></div>
+      <p style="margin:0;line-height:1.65;">AI 협업 기반 직무역량 평가 솔루션</p>
+      <div class="m-footer__links">
+        <a href="mailto:info@aqbar.ai">info@aqbar.ai</a>
+        <a href="https://aqbar.ai" target="_blank" rel="noopener noreferrer">https://aqbar.ai</a>
+        <a href="index.html">데스크탑 버전 보기</a>
+      </div>
+      <p class="m-footer__copy">© 2026 AQbar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="mobile.js"></script>
+</body>
+</html>
