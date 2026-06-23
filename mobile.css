@@ -542,43 +542,42 @@ a { color: inherit; }
   padding: 24px;
 }
 
-/* ── Timeline ── */
+/* ── Timeline (7 Steps — centered) ── */
 .m-timeline {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 0;
   margin-top: 24px;
 }
 
 .m-timeline__item {
   position: relative;
-  padding-left: 28px;
-  padding-bottom: 24px;
+  width: 100%;
+  max-width: 260px;
+  padding: 0 16px 20px;
+  text-align: center;
 }
 
 .m-timeline__item:last-child { padding-bottom: 0; }
 
-.m-timeline__item::before {
+.m-timeline__item:not(:last-child)::after {
   content: '';
-  position: absolute;
-  left: 5px;
-  top: 8px;
-  bottom: 0;
+  display: block;
   width: 2px;
+  height: 20px;
   background: var(--border);
+  margin: 16px auto 0;
 }
 
-.m-timeline__item:last-child::before { display: none; }
-
 .m-timeline__dot {
-  position: absolute;
-  left: 0;
-  top: 6px;
+  position: static;
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background: var(--primary);
   box-shadow: 0 0 0 4px rgba(19,52,94,.1);
+  margin: 0 auto 10px;
 }
 
 .m-timeline__dot--accent { background: var(--accent); box-shadow: 0 0 0 4px rgba(75,63,214,.1); }
