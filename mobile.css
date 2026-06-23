@@ -594,14 +594,7 @@ a { color: inherit; }
 .m-timeline__title {
   font-size: 17px;
   font-weight: 700;
-  margin: 0 0 6px;
-}
-
-.m-timeline__desc {
-  font-size: 14px;
-  color: var(--muted);
-  line-height: 1.6;
-  margin: 0;
+  margin: 0 0 8px;
 }
 
 .m-tag {
@@ -610,7 +603,7 @@ a { color: inherit; }
   font-weight: 700;
   padding: 2px 8px;
   border-radius: 3px;
-  margin-top: 8px;
+  margin-top: 0;
 }
 
 .m-tag--why { color: var(--primary); background: #eef1f7; }
