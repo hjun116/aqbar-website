@@ -10,9 +10,9 @@
     return file === 'index-mobile.html' ? 'mobile' : 'desktop';
   }
 
-  function getFormData(form) {
+  function getFormData(form, inquiryType) {
     return {
-      inquiryType: form.dataset.inquiryType || 'poc',
+      inquiryType: inquiryType,
       name: (form.querySelector('[name="name"]') || {}).value || '',
       email: (form.querySelector('[name="email"]') || {}).value || '',
       company: (form.querySelector('[name="company"]') || {}).value || '',
@@ -33,20 +33,20 @@
     button.style.opacity = '';
   }
 
-  function markSubmitted(activeBtn, siblingBtn) {
-    activeBtn.textContent = '전송되었습니다 ✓';
-    activeBtn.disabled = true;
-    activeBtn.style.background = '#1fae6b';
-    activeBtn.style.color = '#fff';
-    activeBtn.style.opacity = '1';
-    if (activeBtn.classList.contains('m-btn--ghost')) {
-      activeBtn.style.borderColor = '#1fae6b';
+  function markSubmitted(button) {
+    button.textContent = '전송되었습니다 ✓';
+    button.disabled = true;
+    button.dataset.submitted = 'true';
+    button.style.background = '#1fae6b';
+    button.style.color = '#fff';
+    button.style.opacity = '1';
+    if (button.classList.contains('m-btn--ghost')) {
+      button.style.borderColor = '#1fae6b';
     }
-    if (siblingBtn) siblingBtn.disabled = true;
   }
 
   function markSubmitError(button) {
-    button.textContent = '전송 실패 · 다시 시도';
+    button.textContent = button.dataset.originalText || button.textContent;
     button.disabled = false;
     button.style.background = '';
     button.style.color = '';
@@ -54,11 +54,13 @@
     button.style.opacity = '1';
   }
 
-  function submitToSheet(form, activeBtn, siblingBtn) {
+  function submitToSheet(form, activeBtn, inquiryType) {
+    if (activeBtn.dataset.submitted === 'true') return;
+
     var webAppUrl = getConfig();
     if (!webAppUrl) {
       console.warn('[AQbar] contact-config.js에 webAppUrl을 설정해 주세요.');
-      markSubmitted(activeBtn, siblingBtn);
+      markSubmitted(activeBtn);
       return;
     }
 
@@ -68,10 +70,10 @@
       method: 'POST',
       mode: 'no-cors',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(getFormData(form))
+      body: JSON.stringify(getFormData(form, inquiryType))
     })
       .then(function () {
-        markSubmitted(activeBtn, siblingBtn);
+        markSubmitted(activeBtn);
       })
       .catch(function (error) {
         console.error('[AQbar] 문의 전송 실패:', error);
@@ -96,15 +98,13 @@
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       if (!isFormValid()) return;
-      form.dataset.inquiryType = 'poc';
-      submitToSheet(form, submitBtn, pricingBtn);
+      submitToSheet(form, submitBtn, 'poc');
     });
 
     if (pricingBtn) {
       pricingBtn.addEventListener('click', function () {
         if (!isFormValid()) return;
-        form.dataset.inquiryType = 'pricing';
-        submitToSheet(form, pricingBtn, submitBtn);
+        submitToSheet(form, pricingBtn, 'pricing');
       });
     }
 

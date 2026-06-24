@@ -75,8 +75,8 @@
 
     function updateButtons() {
       var valid = isFormValid();
-      if (submitBtn) submitBtn.disabled = !valid;
-      if (pricingBtn) pricingBtn.disabled = !valid;
+      if (submitBtn && submitBtn.dataset.submitted !== 'true') submitBtn.disabled = !valid;
+      if (pricingBtn && pricingBtn.dataset.submitted !== 'true') pricingBtn.disabled = !valid;
     }
 
     fields.forEach(function (input) {
