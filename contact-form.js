@@ -5,13 +5,18 @@
     return (window.AQBAR_CONTACT_CONFIG && window.AQBAR_CONTACT_CONFIG.webAppUrl) || '';
   }
 
+  function getSource() {
+    var file = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    return file === 'index-mobile.html' ? 'mobile' : 'desktop';
+  }
+
   function getFormData(form) {
     return {
       inquiryType: form.dataset.inquiryType || 'poc',
       name: (form.querySelector('[name="name"]') || {}).value || '',
       email: (form.querySelector('[name="email"]') || {}).value || '',
       company: (form.querySelector('[name="company"]') || {}).value || '',
-      source: document.body.classList.contains('m-page') ? 'mobile' : 'desktop'
+      source: getSource()
     };
   }
 
