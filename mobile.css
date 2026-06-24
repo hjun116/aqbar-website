@@ -1177,6 +1177,10 @@ a { color: inherit; }
   line-height: 1.85;
 }
 
+#impact .m-stat {
+  padding-left: 24px;
+}
+
 /* ── Week cards ── */
 .m-week {
   border: 1px solid var(--border);
