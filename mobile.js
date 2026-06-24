@@ -87,20 +87,28 @@
 
     updateButtons();
 
+    function markSubmitted(activeBtn) {
+      activeBtn.textContent = '전송되었습니다 ✓';
+      activeBtn.disabled = true;
+      activeBtn.style.background = '#1fae6b';
+      activeBtn.style.color = '#fff';
+      if (activeBtn.classList.contains('m-btn--ghost')) {
+        activeBtn.style.borderColor = '#1fae6b';
+      }
+      if (submitBtn && submitBtn !== activeBtn) submitBtn.disabled = true;
+      if (pricingBtn && pricingBtn !== activeBtn) pricingBtn.disabled = true;
+    }
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       if (!isFormValid()) return;
-      submitBtn.textContent = '전송되었습니다 ✓';
-      submitBtn.disabled = true;
-      submitBtn.style.background = '#1fae6b';
-      if (pricingBtn) pricingBtn.disabled = true;
+      markSubmitted(submitBtn);
     });
 
     if (pricingBtn) {
       pricingBtn.addEventListener('click', function () {
         if (!isFormValid()) return;
-        var el = document.getElementById('pricing');
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
+        markSubmitted(pricingBtn);
       });
     }
   }
