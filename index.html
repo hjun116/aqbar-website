@@ -1682,7 +1682,7 @@ AQbar는 직감에 의존하던 지원자의 사고 과정을 입체적인 지�
       
       <p style="margin: 22px auto 0; font-size: 20px; line-height: 1.6; color: #bccde2; max-width: 650px">정식 출시 전, PoC를 통해 채용 평가의 새로운 표준을 먼저 경험하실 수 있습니다.</p>
 
-      <form onsubmit="(function(e){e.preventDefault();var f=e.target;if(!f.checkValidity())return;var btn=f.querySelector('[type=submit]');btn.textContent='전송되었습니다 ✓';btn.style.background='#1fae6b';btn.style.color='#fff';btn.disabled=true;var p=f.querySelector('[data-pricing-inquiry]');if(p)p.disabled=true;})(event)" style="margin:40px auto 0;max-width:480px;text-align:left;display:flex;flex-direction:column;gap:16px;">
+      <form class="aq-contact-form" novalidate style="margin:40px auto 0;max-width:480px;text-align:left;display:flex;flex-direction:column;gap:16px;">
         <div style="display:flex;flex-direction:column;gap:6px;">
           <label style="font-size:12.5px;font-weight:600;letter-spacing:.08em;color:#9fc0e8;text-transform:uppercase;">담당자 이름</label>
           <input type="text" name="name" required="" placeholder="홍길동" style="width:100%;box-sizing:border-box;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:6px;padding:13px 16px;font-size:15px;color:#fff;outline:none;font-family:'Pretendard',sans-serif;" onfocus="this.style.borderColor='rgba(255,255,255,.5)'" onblur="this.style.borderColor='rgba(255,255,255,.18)'">
@@ -1696,7 +1696,7 @@ AQbar는 직감에 의존하던 지원자의 사고 과정을 입체적인 지�
           <input type="text" name="company" required="" placeholder="(주)회사명" style="width:100%;box-sizing:border-box;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:6px;padding:13px 16px;font-size:15px;color:#fff;outline:none;font-family:'Pretendard',sans-serif;" onfocus="this.style.borderColor='rgba(255,255,255,.5)'" onblur="this.style.borderColor='rgba(255,255,255,.18)'">
         </div>
         <div style="display:flex;gap:12px;margin-top:8px;">
-          <button type="button" data-pricing-inquiry onclick="(function(btn){var f=btn.closest('form');if(!f.checkValidity()){f.reportValidity();return;}btn.textContent='전송되었습니다 ✓';btn.style.background='#1fae6b';btn.style.color='#fff';btn.style.borderColor='#1fae6b';btn.disabled=true;var s=f.querySelector('[type=submit]');if(s)s.disabled=true;})(this)" style="flex:1;padding:15px;font-size:15.5px;font-weight:700;color:#fff;background:transparent;border:1px solid rgba(255,255,255,.35);border-radius:6px;cursor:pointer;font-family:'Pretendard',sans-serif;letter-spacing:-.01em;transition:background .15s,border-color .15s;" onmouseenter="this.style.background='rgba(255,255,255,.08)';this.style.borderColor='rgba(255,255,255,.6)'" onmouseleave="this.style.background='transparent';this.style.borderColor='rgba(255,255,255,.35)'">가격 문의하기</button>
+          <button type="button" data-pricing-inquiry style="flex:1;padding:15px;font-size:15.5px;font-weight:700;color:#fff;background:transparent;border:1px solid rgba(255,255,255,.35);border-radius:6px;cursor:pointer;font-family:'Pretendard',sans-serif;letter-spacing:-.01em;transition:background .15s,border-color .15s;" onmouseenter="this.style.background='rgba(255,255,255,.08)';this.style.borderColor='rgba(255,255,255,.6)'" onmouseleave="this.style.background='transparent';this.style.borderColor='rgba(255,255,255,.35)'">가격 문의하기</button>
           <button type="submit" style="flex:1;padding:15px;font-size:15.5px;font-weight:700;color:var(--primary);background:#fff;border:none;border-radius:6px;cursor:pointer;font-family:'Pretendard',sans-serif;letter-spacing:-.01em;transition:background .15s;">PoC 신청하기 →</button>
         </div>
       </form>
@@ -1734,5 +1734,7 @@ AQbar는 직감에 의존하던 지원자의 사고 과정을 입체적인 지�
 
 </div>
 
+<script src="contact-config.js"></script>
+<script src="contact-form.js"></script>
 </body>
 </html>

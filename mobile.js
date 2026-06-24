@@ -87,29 +87,5 @@
 
     updateButtons();
 
-    function markSubmitted(activeBtn) {
-      activeBtn.textContent = '전송되었습니다 ✓';
-      activeBtn.disabled = true;
-      activeBtn.style.background = '#1fae6b';
-      activeBtn.style.color = '#fff';
-      if (activeBtn.classList.contains('m-btn--ghost')) {
-        activeBtn.style.borderColor = '#1fae6b';
-      }
-      if (submitBtn && submitBtn !== activeBtn) submitBtn.disabled = true;
-      if (pricingBtn && pricingBtn !== activeBtn) pricingBtn.disabled = true;
-    }
-
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      if (!isFormValid()) return;
-      markSubmitted(submitBtn);
-    });
-
-    if (pricingBtn) {
-      pricingBtn.addEventListener('click', function () {
-        if (!isFormValid()) return;
-        markSubmitted(pricingBtn);
-      });
-    }
   }
 })();
