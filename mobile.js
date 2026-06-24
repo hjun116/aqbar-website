@@ -56,23 +56,52 @@
     });
   });
 
-  /* ── Contact form (demo) ── */
+  /* ── Contact form validation ── */
   var form = document.querySelector('.m-form');
   if (form) {
+    var fields = [
+      form.querySelector('#name'),
+      form.querySelector('#email'),
+      form.querySelector('#company')
+    ];
+    var submitBtn = form.querySelector('[type="submit"]');
+    var pricingBtn = form.querySelector('[data-scroll-pricing]');
+
+    function isFormValid() {
+      return fields.every(function (input) {
+        return input && input.value.trim() !== '';
+      });
+    }
+
+    function updateButtons() {
+      var valid = isFormValid();
+      if (submitBtn) submitBtn.disabled = !valid;
+      if (pricingBtn) pricingBtn.disabled = !valid;
+    }
+
+    fields.forEach(function (input) {
+      if (!input) return;
+      input.addEventListener('input', updateButtons);
+      input.addEventListener('change', updateButtons);
+    });
+
+    updateButtons();
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      var btn = form.querySelector('[type="submit"]');
-      btn.textContent = '전송되었습니다 ✓';
-      btn.disabled = true;
-      btn.style.background = '#1fae6b';
+      if (!isFormValid()) return;
+      submitBtn.textContent = '전송되었습니다 ✓';
+      submitBtn.disabled = true;
+      submitBtn.style.background = '#1fae6b';
+      if (pricingBtn) pricingBtn.disabled = true;
     });
-  }
 
-  var pricingBtn = document.querySelector('[data-scroll-pricing]');
-  if (pricingBtn) {
-    pricingBtn.addEventListener('click', function () {
-      var el = document.getElementById('pricing');
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
-    });
+    if (pricingBtn) {
+      pricingBtn.addEventListener('click', function () {
+        if (!isFormValid()) return;
+        var el = document.getElementById('pricing');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      });
+    }
   }
 })();
