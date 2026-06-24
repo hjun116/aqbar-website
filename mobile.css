@@ -501,6 +501,8 @@ a { color: inherit; }
 
 .m-testimonial__tag {
   display: inline-block;
+  align-self: flex-start;
+  width: fit-content;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: .03em;
