@@ -1505,6 +1505,7 @@ a { color: inherit; }
   font-size: 12.5px;
   line-height: 1.6;
   color: rgba(255,255,255,.55);
+  word-break: keep-all;
 }
 
 .m-footer__copy {
