@@ -1500,6 +1500,13 @@ a { color: inherit; }
   margin-top: 20px;
 }
 
+.m-footer__address {
+  margin: 16px 0 0;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: rgba(255,255,255,.55);
+}
+
 .m-footer__copy {
   margin-top: 28px;
   padding-top: 20px;
