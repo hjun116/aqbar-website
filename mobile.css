@@ -1501,7 +1501,15 @@ a { color: inherit; }
 }
 
 .m-footer__address {
-  margin: 16px 0 0;
+  margin: 10px 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255,255,255,.75);
+  word-break: keep-all;
+}
+
+.m-footer__biz {
+  margin: 12px 0 0;
   font-size: 12.5px;
   line-height: 1.6;
   color: rgba(255,255,255,.55);
